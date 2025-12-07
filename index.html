@@ -20,59 +20,183 @@
   </div>
 </header>
 
-<div class="main">
-  <section class="top-section">
-    <div>
-      <!-- Upload a file called profile.jpg to the repo -->
-      <img src="Lavender5.png" alt="Urjaswi Mukherjee" class="profile-pic" />
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 12%;
+      font-family: "Georgia", "Times New Roman", serif;
+      line-height: 1.6;
+      background: #fafafa;
+      color: #333;
+    }
+
+    /* Top profile area */
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+    }
+
+    /* Left – photo */
+    .profile-photo {
+      flex: 0 0 150px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-photo img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* Middle – name + info */
+    .profile-main {
+      flex: 1;
+      border-left: 1px solid #ddd;
+      padding-left: 30px;
+    }
+
+    .profile-name {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .profile-title-line {
+      font-size: 15px;
+      color: #555;
+      margin: 4px 0;
+    }
+
+    .profile-address {
+      margin-top: 18px;
+      font-size: 14px;
+    }
+
+    /* Right – icons / links */
+    .profile-links {
+      flex: 0 0 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 14px;
+      font-size: 18px;
+    }
+
+    .profile-links a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .profile-links a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+
+    b, strong {
+      font-weight: 700;
+    }
+
+    /* Small screens */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+      .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .profile-main {
+        border-left: none;
+        padding-left: 0;
+      }
+      .profile-links {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 18px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP PROFILE SECTION -->
+  <section class="profile-header">
+    <!-- Photo -->
+    <div class="profile-photo">
+      <!-- Replace 'your-photo.jpg' with your own file name -->
+      <img src="your-photo.jpg" alt="Your Name">
     </div>
 
-    <div>
-      <div class="name">Urjaswi Mukherjee</div>
-      <hr class="divider" />
+    <!-- Name + info -->
+    <div class="profile-main">
+      <h1 class="profile-name">Your Name</h1>
 
-      <p class="info-line">
-        Ph.D. Candidate in Economics<br />
-        University of Nevada, Reno (UNR)
-      </p>
+      <div class="profile-title-line">
+        Ph.D. Candidate in Economics &nbsp;&nbsp;|&nbsp;&nbsp; University of Nevada, Reno (UNR)
+      </div>
 
-      <p class="info-line">
-        1664 N. Virginia Street, Ansari Business Building<br />
+      <div class="profile-address">
+        1664 N. Virginia Street, The John Tulloch Business Building,<br>
         Reno, NV 89557
-      </p>
-
-      <div class="contact-links">
-        <a href="mailto:your-email@unr.edu">Email</a>
-        <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-        <a href="https://orcid.org" target="_blank">ORCID</a>
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
       </div>
     </div>
-  </section>
 
-  <section class="section">
-    <h2>Self Introduction</h2>
-    <div class="content-box">
-      <p>
-        I am a fifth-year Ph.D. candidate in the Department of Economics at the
-        University of Nevada, Reno, expecting to graduate in May 2026. I am
-        currently preparing for the academic and research job market.
-      </p>
-      <p>
-        My research lies in applied microeconomics, with a particular focus on
-        health economics, public health policy, and mental health. I study how
-        policies such as postpartum Medicaid coverage extensions, Medicaid
-        expansions, and debt-relief programs affect insurance coverage, mental
-        health, and economic outcomes among disadvantaged populations.
-      </p>
-      <p>
-        I am also deeply invested in teaching statistics, econometrics, and
-        microeconomics, with an emphasis on building students’ confidence in
-        mathematics and in using data to answer policy-relevant questions.
-      </p>
+    <!-- Icons / links -->
+    <div class="profile-links">
+      <!-- You can replace the text with real icons later (Font Awesome, etc.) -->
+      <a href="mailto:your_email@unr.edu" title="Email">&#9993;</a>
+      <a href="https://scholar.google.com/" target="_blank" title="Website / Scholar">&#127760;</a>
+      <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" title="ORCID">iD</a>
+      <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">in</a>
     </div>
   </section>
-</div>
+
+  <!-- MAIN TEXT -->
+  <section>
+    <h2>Self Introduction</h2>
+
+    <p>
+      I am a sixth-year Ph.D. candidate in the Department of Economics at the
+      University of Nevada, Reno (UNR), currently on the job market for the
+      2025–2026 academic year.
+    </p>
+
+    <p>
+      My research fields are <strong>Labor Economics, Health Economics,
+      Public Economics,</strong> and <strong>Applied Microeconomics</strong>.
+      Broadly, my research examines how public policies and individual factors
+      shape economic and health outcomes, with a particular focus on vulnerable
+      populations.
+    </p>
+
+    <p>
+      ❓ What drives self-employment? Is it primarily dominated and driven by
+      opportunity or by necessity in different contexts?
+    </p>
+
+    <p>
+      ❓ To what extent can policies designed to support households effectively
+      enhance social welfare?
+    </p>
+  </section>
 
 </body>
 </html>
